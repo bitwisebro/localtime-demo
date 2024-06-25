@@ -64,6 +64,7 @@ footer {
 }
 
 footer a {
+    color: #0073b1;
     text-decoration: none;
     margin: 0 20px;
     transition: color 0.3s;
@@ -76,4 +77,11 @@ footer a:hover {
 
 footer a:last-child {
     color: #333;
+}
+
+.date-container {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
 }

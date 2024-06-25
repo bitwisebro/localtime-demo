@@ -9,8 +9,11 @@ function updateTime() {
 
     // Update 12-hour format
     document.getElementById('time-12').textContent = new Date().toLocaleTimeString();;
+
+    //Update Date
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('date-container').textContent = now.toLocaleDateString('en-US', options);
 }
 
-// Update the time immediately and then every second
 updateTime();
 setInterval(updateTime, 1000);
